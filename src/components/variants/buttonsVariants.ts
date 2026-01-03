@@ -1,0 +1,31 @@
+import { tv, type VariantProps } from 'tailwind-variants';
+
+export const buttonVariants = tv({
+  base: 'px-5 py-2 rounded-lg hover:opacity-80 transition-opacity',
+  variants: {
+    color: {
+      primary: 'bg-gray-700/60 cursor-pointer text-black dark:text-white text-white',
+      neutral: 'bg-zinc-500 text-black dark:text-white',
+    },
+    flat: {
+      true: 'bg-transparent'
+    }
+  },
+  defaultVariants: {
+    color: 'primary'
+  },
+  compoundVariants: [
+    {
+      color: 'primary',
+      flat: true,
+      class: 'bg-blue-500/40 text-blue-700 dark:text-blue-300'
+    },
+    {
+      color: 'neutral',
+      flat: true,
+      class: 'bg-zinc-500/20 text-zinc-700 dark:text-zinc-300'
+    }
+  ]
+});
+
+export type ButtonVariantProps = VariantProps<typeof buttonVariants>;
