@@ -10,22 +10,11 @@ const Home: React.FC = () => {
         className="text-7xl text-center" 
       />
       
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, excepturi aut. Ut animi impedit voluptas hic sequi vitae corrupti, itaque incidunt nobis inventore aliquid labore provident? Tempore sunt veniam molestias.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem sit aliquam ratione dolore unde laudantium cupiditate pariatur consequuntur recusandae repellendus similique quidem, illo nam, molestiae debitis. Corporis earum voluptatum possimus!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos beatae adipisci, nesciunt quos eum corrupti, in et velit officia quisquam dignissimos molestiae dolores quam, placeat porro. Ullam, error cum?
+      <p>Hi, I'm Nimantha Bandara Thennakoon, a passionate software developer with experience in 
+React, Angular, Spring Boot, PHP, and Java. I enjoy building interactive web applications 
+and exploring new technologies. 
       </p>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, excepturi aut. Ut animi impedit voluptas hic sequi vitae corrupti, itaque incidunt nobis inventore aliquid labore provident? Tempore sunt veniam molestias.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem sit aliquam ratione dolore unde laudantium cupiditate pariatur consequuntur recusandae repellendus similique quidem, illo nam, molestiae debitis. Corporis earum voluptatum possimus!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos beatae adipisci, nesciunt quos eum corrupti, in et velit officia quisquam dignissimos molestiae dolores quam, placeat porro. Ullam, error cum?
-      </p>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, excepturi aut. Ut animi impedit voluptas hic sequi vitae corrupti, itaque incidunt nobis inventore aliquid labore provident? Tempore sunt veniam molestias.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem sit aliquam ratione dolore unde laudantium cupiditate pariatur consequuntur recusandae repellendus similique quidem, illo nam, molestiae debitis. Corporis earum voluptatum possimus!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos beatae adipisci, nesciunt quos eum corrupti, in et velit officia quisquam dignissimos molestiae dolores quam, placeat porro. Ullam, error cum?
-      </p>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, excepturi aut. Ut animi impedit voluptas hic sequi vitae corrupti, itaque incidunt nobis inventore aliquid labore provident? Tempore sunt veniam molestias.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem sit aliquam ratione dolore unde laudantium cupiditate pariatur consequuntur recusandae repellendus similique quidem, illo nam, molestiae debitis. Corporis earum voluptatum possimus!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos beatae adipisci, nesciunt quos eum corrupti, in et velit officia quisquam dignissimos molestiae dolores quam, placeat porro. Ullam, error cum?
-      </p>
+      
       <div className="h-20 pb-10">
         <ScrollFloat
         animationDuration={1}

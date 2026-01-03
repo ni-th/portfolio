@@ -42,7 +42,7 @@ const App = () => {
         </div>
 
         {/* Pages */}
-        <div className="flex justify-center">
+        <div className="flex justify-center mx-5">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contacts" element={<Contacts />} />
