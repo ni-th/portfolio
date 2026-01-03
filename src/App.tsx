@@ -1,11 +1,9 @@
-import React from "react";
 import Home from "./pages/Home";
 import NavBar from "./components/layout/NavBar";
 import LightRays from "./components/common/LightRays";
 import { Route, Routes } from "react-router-dom";
 import Contacts from "./pages/Contacts";
 import About from "./pages/About";
-import ShinyText from "./components/common/ShinyText";
 import GradientText from "./components/common/GradientText";
 
 const App = () => {
