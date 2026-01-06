@@ -7,7 +7,6 @@ import About from "./pages/About";
 const App = () => {
   return (
     <div className="relative min-h-screen bg-black text-white rubik">
-      {/* Background Light Rays */}
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <LightRays
           raysOrigin="top-center"
