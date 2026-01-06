@@ -4,7 +4,6 @@ import LightRays from "./components/common/LightRays";
 import { Route, Routes } from "react-router-dom";
 import Contacts from "./pages/Contacts";
 import About from "./pages/About";
-import GradientText from "./components/common/GradientText";
 
 const App = () => {
   return (
@@ -27,20 +26,8 @@ const App = () => {
 
       {/* Foreground Content */}
       <div className="relative z-10">
-        <div className="text-center py-10">
-          <GradientText
-            children="Hello, Welcome"
-            className="text-7xl text-center"
-          />
-        </div>
-
-        {/* Navbar */}
-        <div className="sticky top-5 z-50">
-          <NavBar />
-        </div>
-
         {/* Pages */}
-        <div className="flex justify-center mx-5">
+        <div className="flex justify-center">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contacts" element={<Contacts />} />
