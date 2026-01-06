@@ -1,5 +1,4 @@
 import Home from "./pages/Home";
-import NavBar from "./components/layout/NavBar";
 import LightRays from "./components/common/LightRays";
 import { Route, Routes } from "react-router-dom";
 import Contacts from "./pages/Contacts";
