@@ -8,7 +8,7 @@ interface NavBarProps {
 const NavBar: React.FC<NavBarProps> = ({ className = "" }) => {
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "Work", path: "/abouts" },
+    { name: "About", path: "/abouts" },
     { name: "Education", path: "/abouts" },
     { name: "Contacts", path: "/contacts" },
   ];
