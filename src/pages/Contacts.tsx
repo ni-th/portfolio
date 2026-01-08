@@ -1,8 +1,9 @@
 import React from 'react'
+import NavBar from '../components/layout/NavBar'
 
-const Contacts: React.FC = () => {
+const Contacts = () => {
   return (
-    <div>Contacts</div>
+    <><NavBar className="mt-5" /></>
   )
 }
 

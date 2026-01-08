@@ -5,12 +5,14 @@ interface ButtonProps
     ButtonVariantProps {
   children: React.ReactNode;
   className?: string;
+  Icon?: React.ElementType<{ size: number }>;
 }
 
 export const Button = ({
   children,
   color,
   flat,
+  Icon,
   className,
   ...rest
 }: ButtonProps) => {
@@ -20,6 +22,7 @@ export const Button = ({
       {...rest}
     >
       {children}
+      {Icon && <Icon size={18} />}
     </button>
   );
 };

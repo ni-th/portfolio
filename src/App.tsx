@@ -3,6 +3,7 @@ import LightRays from "./components/common/LightRays";
 import { Route, Routes } from "react-router-dom";
 import Contacts from "./pages/Contacts";
 import About from "./pages/About";
+import Project from "./pages/Project";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Project />} />
           </Routes>
         </div>
       </div>
