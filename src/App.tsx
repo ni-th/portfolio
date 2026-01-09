@@ -24,7 +24,7 @@ const App = () => {
       </div>
 
       {/* Foreground Content */}
-      <div className="">
+      
         {/* Pages */}
         <div className="relative z-10 h-full flex justify-center">
           <Routes>
@@ -34,7 +34,6 @@ const App = () => {
             <Route path="/projects" element={<Project />} />
           </Routes>
         </div>
-      </div>
     </div>
   );
 };
