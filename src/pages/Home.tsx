@@ -22,7 +22,7 @@ const Home: React.FC = () => {
           <p className="text-gray-600">
             Trainee Software Engineer | Passionate Developer
           </p>
-          <div className="flex items-center justify-center mt-4 bg-sky-900/20 px-7 py-4 mx-2 rounded-3xl md:rounded-full gap-4">
+          <div className="flex items-center justify-center mt-4 bg-sky-900/20 px-7 py-4 mx-4 rounded-3xl md:rounded-full gap-4">
             <motion.span
               animate={{
                 rotate: 40,

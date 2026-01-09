@@ -19,7 +19,7 @@ const NavBar: React.FC<NavBarProps> = ({ className = "" }) => {
   const location = useLocation();
   return (
    <div
-      className={`grid grid-cols-2 md:grid-cols-4 gap-5 bg-gray-600/10 px-7 py-4 mx-2 rounded-4xl md:rounded-full  ${className}`}
+      className={`grid grid-cols-2 md:grid-cols-4 gap-5 bg-gray-600/10 px-7 py-4 mx-4 rounded-4xl md:rounded-full  ${className}`}
     >
       {navItems.map((item) => {
         const Icon = item.icon;
