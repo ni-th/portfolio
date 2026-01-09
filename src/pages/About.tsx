@@ -19,10 +19,7 @@ const About: React.FC = () => {
             />
             <Card title="Hello! I’m Nimantha">
               <BlurText
-                text="A passionate software developer with a background in Physical
-                Science and formal training in Software Engineering. I enjoy
-                turning complex problems into clean, efficient code and building
-                applications that make a difference."
+                text="A passionate software developer with a background in Physical Science and formal training in Software Engineering. I enjoy turning complex problems into clean, efficient code and building applications that make a difference."
                 delay={150}
                 animateBy="words"
                 direction="top"
@@ -32,11 +29,7 @@ const About: React.FC = () => {
 
           <Card title="What I Do">
             <BlurText
-              text="A passionate and detail-oriented software developer with hands-on
-              experience in building dynamic web applications using React,
-              Spring Boot, and Java. I specialize in creating interactive,
-              user-friendly solutions and have a strong foundation in both
-              frontend and backend development."
+              text="A passionate and detail-oriented software developer with hands-on experience in building dynamic web applications using React, Spring Boot, and Java. I specialize in creating interactive, user-friendly solutions and have a strong foundation in both frontend and backend development."
               delay={150}
               animateBy="words"
               direction="top"
