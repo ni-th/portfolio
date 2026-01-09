@@ -5,16 +5,16 @@ import { motion } from "motion/react";
 import BlurText from "../components/common/BlurText";
 const About: React.FC = () => {
   return (
-    <div className="h-screen">
+    <div className="justify-center items-center min-h-screen">
       <div className="max-w-4xl w-full">
         <NavBar className="mt-5" />
         <div className="mt-3 flex flex-wrap gap-2 mx-4">
-          <div className="grid frid-cols-1 md:grid-cols-2 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2">
             <motion.img
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2 }}
-              className="max-w-100 h-auto object-cover"
+              className="w-full h-auto object-cover"
               src="https://lhfyyotobejfrsrxjlqr.supabase.co/storage/v1/object/sign/portfolio/me.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iNTVkZTkxNS1mZjkzLTQ1NjktOGQ4NS0zOTNjYmE0ZjdhZjUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwb3J0Zm9saW8vbWUucG5nIiwiaWF0IjoxNzY3ODYwODc1LCJleHAiOjE5MjU1NDA4NzV9.f5uR_MKYKkA5R6fNtiV8lvnmp150pW5xj5M4R13v6hc"
             />
             <Card title="Hello! I’m Nimantha">

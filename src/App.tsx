@@ -7,7 +7,7 @@ import Project from "./pages/Project";
 
 const App = () => {
   return (
-    <div className="relative min-h-screen text-white rubik">
+    <div className="relative h-full text-white rubik">
       <div className="absolute top-0 inset-x-0 z-0 pointer-events-none h-full overflow-x-hidden">
         <LightRays
           raysOrigin="top-center"
