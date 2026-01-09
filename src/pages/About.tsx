@@ -4,7 +4,7 @@ import NavBar from '../components/layout/NavBar'
 const About: React.FC = () => {
   return (
     <div className="h-screen">
-      <div className="max-w-4xl flex items-center flex-col">
+      <div className="max-w-4xl w-full">
         <NavBar className="mt-5" />
         <div>
           <h2>Hello! I’m Nimantha</h2>

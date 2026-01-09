@@ -21,5 +21,4 @@
 /* Apply to entire app */
 body {
   background-color: var(--system-bg);
-  min-height: 100vh;
 }

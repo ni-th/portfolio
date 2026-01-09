@@ -2,6 +2,14 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import React, { useMemo, useRef } from 'react';
 import * as THREE from 'three';
 
+const seededRandom = (() => {
+  let seed = 12345;
+  return () => {
+    seed = (seed * 9301 + 49297) % 233280;
+    return seed / 233280;
+  };
+})();
+
 interface AntigravityProps {
   count?: number;
   magnetRadius?: number;
@@ -51,18 +59,18 @@ const AntigravityInner: React.FC<AntigravityProps> = ({
     const height = viewport.height || 100;
 
     for (let i = 0; i < count; i++) {
-      const t = Math.random() * 100;
-      const factor = 20 + Math.random() * 100;
-      const speed = 0.01 + Math.random() / 200;
-      const xFactor = -50 + Math.random() * 100;
-      const yFactor = -50 + Math.random() * 100;
-      const zFactor = -50 + Math.random() * 100;
+      const t = seededRandom() * 100;
+      const factor = 20 + seededRandom() * 100;
+      const speed = 0.01 + seededRandom() / 200;
+      const xFactor = -50 + seededRandom() * 100;
+      const yFactor = -50 + seededRandom() * 100;
+      const zFactor = -50 + seededRandom() * 100;
 
-      const x = (Math.random() - 0.5) * width;
-      const y = (Math.random() - 0.5) * height;
-      const z = (Math.random() - 0.5) * 20;
+      const x = (seededRandom() - 0.5) * width;
+      const y = (seededRandom() - 0.5) * height;
+      const z = (seededRandom() - 0.5) * 20;
 
-      const randomRadiusOffset = (Math.random() - 0.5) * 2;
+      const randomRadiusOffset = (seededRandom() - 0.5) * 2;
 
       temp.push({
         t,
@@ -84,7 +92,7 @@ const AntigravityInner: React.FC<AntigravityProps> = ({
       });
     }
     return temp;
-  }, [count]);
+  }, [count, viewport.width, viewport.height]);
 
   useFrame(state => {
     const mesh = meshRef.current;
@@ -118,7 +126,10 @@ const AntigravityInner: React.FC<AntigravityProps> = ({
     const globalRotation = state.clock.getElapsedTime() * rotationSpeed;
 
     particles.forEach((particle, i) => {
-      let { t, speed, mx, my, mz, cz, randomRadiusOffset } = particle;
+      const { randomRadiusOffset } = particle;
+      const { speed } = particle;
+      let t = particle.t;
+      const { mx, my, mz, cz } = particle;
 
       t = particle.t += speed / 2;
 
@@ -130,7 +141,7 @@ const AntigravityInner: React.FC<AntigravityProps> = ({
       const dy = my - projectedTargetY;
       const dist = Math.sqrt(dx * dx + dy * dy);
 
-      let targetPos = { x: mx, y: my, z: mz * depthFactor };
+      const targetPos = { x: mx, y: my, z: mz * depthFactor };
 
       if (dist < magnetRadius) {
         const angle = Math.atan2(dy, dx) + globalRotation;
