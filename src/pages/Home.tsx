@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   return (
     <div className="flex justify-center items-center min-h-screen">
       <div className="max-w-4xl w-full">
-        <GradientText children="Hello!" className="text-5xl " />
+        <GradientText children="Hello!" className="text-5xl mt-5" />
         <NavBar className="mt-5" />
         <div className="flex flex-col items-center mt-10">
           <motion.img
