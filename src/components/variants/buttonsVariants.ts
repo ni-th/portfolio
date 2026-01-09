@@ -12,17 +12,17 @@ export const buttonVariants = tv({
     }
   },
   defaultVariants: {
-    color: 'primary'
+    color: 'primary',
+    active: false
   },
   compoundVariants: [
     {
       color: 'primary',
-      flat: true,
-      class: 'bg-blue-500/40 text-blue-700 dark:text-blue-300'
+      class: 'bg-sky-500/10 text-blue-700 dark:text-blue-100'
+      
     },
     {
       color: 'neutral',
-      flat: true,
       class: 'bg-zinc-500/20 text-zinc-700 dark:text-zinc-300'
     }
   ]

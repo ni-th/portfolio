@@ -6,3 +6,20 @@
   font-optical-sizing: auto;
   font-weight: 600;
 }
+
+/* Set system background at root level */
+:root {
+  --system-bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --system-bg: #000000;
+  }
+}
+
+/* Apply to entire app */
+body {
+  background-color: var(--system-bg);
+  min-height: 100vh;
+}

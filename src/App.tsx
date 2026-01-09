@@ -7,14 +7,14 @@ import Project from "./pages/Project";
 
 const App = () => {
   return (
-    <div className="relative min-h-screen bg-black text-white rubik">
-      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+    <div className="relative min-h-screen text-white rubik">
+      <div className="fixed top-0 inset-x-0  z-0 pointer-events-none overflow-x-hidden h-full">
         <LightRays
           raysOrigin="top-center"
           raysColor="#00ffff"
           raysSpeed={1.5}
           lightSpread={0.8}
-          rayLength={2}
+          rayLength={3}
           followMouse={true}
           mouseInfluence={0.1}
           noiseAmount={0.1}

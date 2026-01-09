@@ -1,11 +1,12 @@
-import { buttonVariants, type ButtonVariantProps } from '../variants/buttonsVariants'
+import { buttonVariants, type ButtonVariantProps } from "../variants/buttonsVariants";
 
-interface ButtonProps 
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'color'>,
+interface ButtonProps
+  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "color">,
     ButtonVariantProps {
   children: React.ReactNode;
   className?: string;
   Icon?: React.ElementType<{ size: number }>;
+  isActive?: boolean;
 }
 
 export const Button = ({
@@ -13,12 +14,18 @@ export const Button = ({
   color,
   flat,
   Icon,
-  className,
+  isActive = false,
+  className = "",
   ...rest
 }: ButtonProps) => {
+  console.log(isActive)
   return (
-    <button 
-      className={`${buttonVariants({ color, flat })} ${className || ''}`}
+    <button
+      className={`
+        ${buttonVariants({ color, flat })}
+        ${className}
+        ${isActive ? "ring-1 ring-teal-800" : ""}
+      `}
       {...rest}
     >
       {children}
