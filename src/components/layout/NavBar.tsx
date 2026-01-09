@@ -13,25 +13,26 @@ const navItems = [
   { name: "Contacts", path: "/contacts", icon: Phone },
 ];
 
-
-
 const NavBar: React.FC<NavBarProps> = ({ className = "" }) => {
   const location = useLocation();
+  
   return (
-   <div
-      className={`grid grid-cols-2 md:grid-cols-4 gap-5 bg-gray-600/10 px-7 py-4 mx-4 rounded-4xl md:rounded-full  ${className}`}
+    <div
+      className={`grid grid-cols-2 md:grid-cols-4 gap-5 bg-gray-600/10 px-7 py-4 mx-4 rounded-4xl md:rounded-full ${className}`}
     >
       {navItems.map((item) => {
-        const Icon = item.icon;
+        const Icon = item.icon; // Capitalize to match component naming convention
         return (
           <Link
             key={item.path}
             to={item.path}
-            className="flex justify-center w-full"
+            className="flex w-full"
           >
-            <Button className={`flex items-center gap-2 px-6 w-full transition-all duration-300`}
-              isActive={location.pathname === item.path}>
-              <Icon size={18} />
+            <Button 
+              className="flex justify-center items-center gap-2 px-6 w-full transition-all duration-300"
+              isActive={location.pathname === item.path}
+              Icon={Icon}
+            >
               <span>{item.name}</span>
             </Button>
           </Link>

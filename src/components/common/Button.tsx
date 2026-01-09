@@ -5,7 +5,7 @@ interface ButtonProps
     ButtonVariantProps {
   children: React.ReactNode;
   className?: string;
-  Icon?: React.ElementType<{ size: number }>;
+  Icon?: React.ElementType<{ size?: number }>; // Made size optional
   isActive?: boolean;
 }
 
@@ -18,7 +18,6 @@ export const Button = ({
   className = "",
   ...rest
 }: ButtonProps) => {
-  console.log(isActive)
   return (
     <button
       className={`
@@ -28,8 +27,9 @@ export const Button = ({
       `}
       {...rest}
     >
+      {/* Render Icon BEFORE children if you want icon on left */}
+      {Icon && <Icon size={20} />} {/* Increased size for better visibility */}
       {children}
-      {Icon && <Icon size={18} />}
     </button>
   );
 };

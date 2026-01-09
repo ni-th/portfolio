@@ -1,7 +1,7 @@
 import { tv, type VariantProps } from 'tailwind-variants';
 
 export const buttonVariants = tv({
-  base: 'px-7 py-2 rounded-full hover:opacity-80 transition-opacity',
+  base: 'py-2 rounded-full hover:opacity-80 transition-opacity',
   variants: {
     color: {
       primary: 'bg-gray-700/60 cursor-pointer text-black dark:text-white text-white',
