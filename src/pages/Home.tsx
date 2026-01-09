@@ -19,7 +19,7 @@ const Home: React.FC = () => {
             src="https://lhfyyotobejfrsrxjlqr.supabase.co/storage/v1/object/sign/portfolio/me.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iNTVkZTkxNS1mZjkzLTQ1NjktOGQ4NS0zOTNjYmE0ZjdhZjUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwb3J0Zm9saW8vbWUucG5nIiwiaWF0IjoxNzY3ODYwODc1LCJleHAiOjE5MjU1NDA4NzV9.f5uR_MKYKkA5R6fNtiV8lvnmp150pW5xj5M4R13v6hc"
           />
           <p className="mt-5 mx-4 text-lg">Hi, I'm Nimantha Thennakoon</p>
-          <p className="text-gray-600 mx-4 flex flex-col md:flex-row items-center justify-center gap-2 text-center">
+          <p className="text-gray-600 mx-4 flex flex-col md:flex-row items-center justify-center md:gap-2 gap-0 text-center">
             <span>Trainee Software Engineer</span>
             <span className="hidden md:inline text-gray-400">|</span>
             <span>Passionate Developer</span>
