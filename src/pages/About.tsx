@@ -5,11 +5,11 @@ import { motion } from "motion/react";
 import BlurText from "../components/common/BlurText";
 const About: React.FC = () => {
   return (
-    <div className="justify-center items-center min-h-screen">
-      <div className="max-w-4xl w-full">
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="max-w-4xl w-full my-5">
         <NavBar className="mt-5" />
-        <div className="mt-3 flex flex-wrap gap-2 mx-4">
-          <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="flex flex-col items-center mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center">
             <motion.img
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
